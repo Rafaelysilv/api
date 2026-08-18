@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f5f7;
+    color: #222;
+}
+
+
+/* =========================
+   TELAS
+========================= */
+
+.tela {
+    min-height: 100vh;
+}
+
+.escondida {
+    display: none !important;
+}
+
+
+/* =========================
+   CADASTRO
+========================= */
+
+#telaCadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 450px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.descricao {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.campo input[type="text"] {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+.campo input[type="text"]:focus {
+    border-color: #6c63ff;
+}
+
+
+/* =========================
+   UPLOAD
+========================= */
+
+.upload {
+    min-height: 150px;
+
+    border: 2px dashed #ccc;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    padding: 15px;
+
+    transition: 0.2s;
+}
+
+.upload:hover {
+    border-color: #6c63ff;
+
+    background: #f8f7ff;
+}
+
+.upload input {
+    display: none;
+}
+
+#preview {
+    display: none;
+
+    width: 110px;
+    height: 110px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-top: 15px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.principal {
+    background: #6c63ff;
+    color: white;
+}
+
+.principal:hover {
+    background: #574fd6;
+}
+
+.secundario {
+    background: #eee;
+    color: #333;
+
+    margin-top: 10px;
+}
+
+.secundario:hover {
+    background: #ddd;
+}
+
+
+/* =========================
+   TELA DE PERFIS
+========================= */
+
+.container {
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 30px 20px;
+}
+
+.cabecalho {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.cabecalho h1 {
+    font-size: 25px;
+}
+
+.voltar {
+    width: auto;
+
+    padding: 10px 16px;
+
+    background: #222;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   LISTA
+========================= */
+
+.lista {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* =========================
+   PERFIL
+========================= */
+
+.perfil {
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.foto-perfil {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    background: #eee;
+
+    flex-shrink: 0;
+}
+
+.info {
+    flex: 1;
+}
+
+.nome {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.likes {
+    color: #777;
+
+    font-size: 14px;
+}
+
+.coracao {
+    color: #e63946;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   LISTA VAZIA
+========================= */
+
+.vazio {
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    color: #777;
+
+    border-radius: 15px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .card {
+        padding: 25px 20px;
+    }
+
+    .cabecalho h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+}
