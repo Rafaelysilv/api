@@ -1,15 +1,28 @@
 {
   "name": "api",
   "version": "1.0.0",
+  "description": "",
   "main": "server.js",
-
-  "scrips":{
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url":"https://github.com/Rafaelysilv/api.git" 
+    "url": "git+https://github.com/Rafaelysilv/api.git"
   },
-  "kene"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Rafaelysilv/api/issues"
+  },
+  "homepage": "https://github.com/Rafaelysilv/api#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.24.2"
+  }
 }
